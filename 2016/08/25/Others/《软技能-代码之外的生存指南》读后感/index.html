@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/header_VicentZ.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/header_VicentZ.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/header_VicentZ.png?v=6.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="1.偶遇最近在逛某东科技书记馆时候，一本书引起了我的注意-《软技能-代码之外的生存指南》，这是什么鬼，第一次听到这个词，虽然不知道是什么，但已经被标题吸引了，外加老外写的，看了看评论果断下单了。 2.名词解释处于好奇，事后去某度上面搜索了一下这个名词，其释义大概是： 软技能就是激活人资的能力，即是调动别人的资源和知识的能力以及调动自己知识进行创造性思维的能力。 反正以我理解就是这本书指引我们走上超">
+<meta name="keywords" content="读书">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《软技能-代码之外的生存指南》读后感">
+<meta property="og:url" content="http://yoursite.com/2016/08/25/Others/《软技能-代码之外的生存指南》读后感/index.html">
+<meta property="og:site_name" content="VicentZ&#39;s zone">
+<meta property="og:description" content="1.偶遇最近在逛某东科技书记馆时候，一本书引起了我的注意-《软技能-代码之外的生存指南》，这是什么鬼，第一次听到这个词，虽然不知道是什么，但已经被标题吸引了，外加老外写的，看了看评论果断下单了。 2.名词解释处于好奇，事后去某度上面搜索了一下这个名词，其释义大概是： 软技能就是激活人资的能力，即是调动别人的资源和知识的能力以及调动自己知识进行创造性思维的能力。 反正以我理解就是这本书指引我们走上超">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-9d60128f8cb267a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-9b9770fd848f353a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-325779322e38e39e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-476af80d54c2f167.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-6b1252537dcf2cd8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-de076d77866e03af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-496ac26e4ad3d9a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-4be74fe8584292f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/717603-e2aa22d34dccef34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-04-26T10:51:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《软技能-代码之外的生存指南》读后感">
+<meta name="twitter:description" content="1.偶遇最近在逛某东科技书记馆时候，一本书引起了我的注意-《软技能-代码之外的生存指南》，这是什么鬼，第一次听到这个词，虽然不知道是什么，但已经被标题吸引了，外加老外写的，看了看评论果断下单了。 2.名词解释处于好奇，事后去某度上面搜索了一下这个名词，其释义大概是： 软技能就是激活人资的能力，即是调动别人的资源和知识的能力以及调动自己知识进行创造性思维的能力。 反正以我理解就是这本书指引我们走上超">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/717603-9d60128f8cb267a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/08/25/Others/《软技能-代码之外的生存指南》读后感/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>《软技能-代码之外的生存指南》读后感 | VicentZ's zone</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?758ad9de00f7f0407ee48efb3ecae3e1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">VicentZ's zone</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/08/25/Others/《软技能-代码之外的生存指南》读后感/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DeveloperZhang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/header_VicentZ.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="VicentZ's zone">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">《软技能-代码之外的生存指南》读后感
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2016-08-25 17:48:08" itemprop="dateCreated datePublished" datetime="2016-08-25T17:48:08+08:00">2016-08-25</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-04-26 18:51:42" itemprop="dateModified" datetime="2018-04-26T18:51:42+08:00">2018-04-26</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/效率/" itemprop="url" rel="index"><span itemprop="name">效率</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="1-偶遇"><a href="#1-偶遇" class="headerlink" title="1.偶遇"></a>1.偶遇</h1><p><img src="http://upload-images.jianshu.io/upload_images/717603-9d60128f8cb267a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="封面"><br>最近在逛某东科技书记馆时候，一本书引起了我的注意-《软技能-代码之外的生存指南》，这是什么鬼，第一次听到这个词，虽然不知道是什么，但已经被标题吸引了，外加老外写的，看了看评论果断下单了。</p>
+<h1 id="2-名词解释"><a href="#2-名词解释" class="headerlink" title="2.名词解释"></a>2.名词解释</h1><p>处于好奇，事后去某度上面搜索了一下这个名词，其释义大概是：</p>
+<p><strong>软技能</strong>就是激活人资的能力，即是调动别人的资源和知识的能力以及调动自己知识进行创造性思维的能力。</p>
+<p>反正以我理解就是这本书指引我们走上超神之路，接下来也是深深被其吸引，也学到了不少东西，在此与大家分享一下。</p>
+<h1 id="3-泛读"><a href="#3-泛读" class="headerlink" title="3.泛读"></a>3.泛读</h1><p>下图是文章目录结构：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/717603-9b9770fd848f353a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="目录结构.png"></p>
+<p>接下来我们就逐一简单介绍下各章内容，看看这本书是否符合你的胃口呢？</p>
+<h2 id="3-1-职业"><a href="#3-1-职业" class="headerlink" title="3.1.职业"></a>3.1.职业</h2><p>职业介绍:</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/717603-325779322e38e39e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="职业"></p>
+<p>这里主要讲讲从业心态：</p>
+<p>说白了就是要有责任心，把每份工作要当成是自己的一个作品，这些都是自己职业生涯的成果。可以把自己理解为一个公司，开发的项目就是公司的产品服务，以后无论走到哪，都能拿得出手给客户（可能是下家公司的面试者）看，以这种心态我相信，不管出于什么原因，我们都会认真的对待当前的工作，尽管这不是唯一一个原因，退一步讲，就算出于职业道德，本身我们拿了公司的钱，也要尽自己最大努力创造自己的价值。所以对于职业这一块我觉得心态这个非常重要。</p>
+<h2 id="3-2-自我营销"><a href="#3-2-自我营销" class="headerlink" title="3.2.自我营销"></a>3.2.自我营销</h2><p>分别从为什么要自我营销，什么是自我营销，怎样自我营销来写。</p>
+<p>这里我也比较认同作者的观点：作为IT从业者，写博客无疑是成本低，见效快的方式了，一来可以加深自己对知识的理解程度，二来更是可以为后来者布道，再者又可以进行自我营销，何乐而不为呢？当然了我们的博客最好是有些技术含量的，而又与众不同的，这点可以慢慢磨练，毕竟不是一蹴而就的。</p>
+<p>很久很久以前我也写过博客，不过都是入门级别的，CSDN排名还看得过去，但是由于后来工作太忙没能坚持住，如今又一次捡起来，我相信这次一定会坚持下去写好博客，目前我还是一名iOS开发者，以后会多写一些iOS，设计模式，数据结构方向的文章，与大家一起分享自己的点滴成长。哈哈，都说要有品牌，我的品牌就是我的名字VicentZ。希望以后也能打响。</p>
+<h2 id="3-3-学习"><a href="#3-3-学习" class="headerlink" title="3.3.学习"></a>3.3.学习</h2><p>学习方法介绍：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/717603-476af80d54c2f167.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="学习方法"></p>
+<p>这里主要介绍下<strong>十步学习法</strong>：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/717603-6b1252537dcf2cd8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="十步学习法"></p>
+<p>相信不用多说，一张图简单明了，但是这里要强调的是第10点，跟上面说的写博客也是相互照应的，按照掌握知识的程度来讲也是讲授知识更能加深我们对知识的理解程度。所以基于这个原因，我也是很建议小伙伴们博客搞起来，我自己也是用Github的pages和Hexo搞了一套，后续会分享出来，供大家撸起来。</p>
+<h2 id="3-4-生产力"><a href="#3-4-生产力" class="headerlink" title="3.4.生产力"></a>3.4.生产力</h2><p>提高生产力：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/717603-de076d77866e03af.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="提高生产力"></p>
+<p>在这里我比较赞同制定计划，这个计划包括日计划，周计划，月计划,凡事都有所准备才能打胜仗，做事之前提前计划好，这样行动起来才有条不紊，效率高。</p>
+<h2 id="3-5-理财"><a href="#3-5-理财" class="headerlink" title="3.5.理财"></a>3.5.理财</h2><p><img src="http://upload-images.jianshu.io/upload_images/717603-496ac26e4ad3d9a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="理财"></p>
+<p>在这里作者主要讲的是合理的使用资金，及时负债能创造更多的价值也是值得的。合理的理财是可以让我们生活的更好的，就要看人们怎么看待风险与收入的比例了。我在这方面经验不多，所以不能给予更合理的建议。</p>
+<h2 id="3-6-健身"><a href="#3-6-健身" class="headerlink" title="3.6.健身"></a>3.6.健身</h2><p><img src="http://upload-images.jianshu.io/upload_images/717603-4be74fe8584292f1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="健身"></p>
+<p>在这里我想总结的是，健身要奉行<strong>合理饮食，适当运动</strong>的原则，对于减肥药摄入的热量要小于消耗的热量，而增肌则需要多补充蛋白质，让肌肉承受最大压力才行。而且这是一项贵在坚持的事业，有了好的身体才能更好的生活和工作，所以大家要重视起来，打造一身刚劲铁骨。</p>
+<h2 id="3-7-精神"><a href="#3-7-精神" class="headerlink" title="3.7.精神"></a>3.7.精神</h2><p><img src="http://upload-images.jianshu.io/upload_images/717603-e2aa22d34dccef34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="精神"></p>
+<p>这里讲的是要有一个<strong>不以物喜，不易己悲</strong>的心态，做什么事情都能把握个度，在自己掌控之中，而不是处于被动地位。</p>
+<h1 id="4-感受"><a href="#4-感受" class="headerlink" title="4.感受"></a>4.感受</h1><p>我相信大部分还是能从本书中受益的，是不是作者要付一些广告非给我了（O(∩_∩)O哈哈~）。这本书我建议可以买一本坐地铁上看，我用了3周在上下班时间把他看完了，所以时间还是挤出来了，就看你的心态如何了，好了，从今天起让我们有计划地过完余生吧，多去充实自己，学习，健身，理财，原本人生可以如此美好。加油吧，Everybody！</p>
+<p><strong>转载请注明出处：<a href="http://vicentz.cn" target="_blank" rel="noopener">http://vicentz.cn</a></strong></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/读书/" rel="tag"># 读书</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/26/Test/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjA0Ny8xMjU4Mg"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/header_VicentZ.png"
+                alt="DeveloperZhang" />
+            
+              <p class="site-author-name" itemprop="name">DeveloperZhang</p>
+              <p class="site-description motion-element" itemprop="description">态度决定一切~</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-偶遇"><span class="nav-number">1.</span> <span class="nav-text">1.偶遇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-名词解释"><span class="nav-number">2.</span> <span class="nav-text">2.名词解释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-泛读"><span class="nav-number">3.</span> <span class="nav-text">3.泛读</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-职业"><span class="nav-number">3.1.</span> <span class="nav-text">3.1.职业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-自我营销"><span class="nav-number">3.2.</span> <span class="nav-text">3.2.自我营销</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-学习"><span class="nav-number">3.3.</span> <span class="nav-text">3.3.学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-生产力"><span class="nav-number">3.4.</span> <span class="nav-text">3.4.生产力</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-理财"><span class="nav-number">3.5.</span> <span class="nav-text">3.5.理财</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-健身"><span class="nav-number">3.6.</span> <span class="nav-text">3.6.健身</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-精神"><span class="nav-number">3.7.</span> <span class="nav-text">3.7.精神</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-感受"><span class="nav-number">4.</span> <span class="nav-text">4.感受</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DeveloperZhang</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.2.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
