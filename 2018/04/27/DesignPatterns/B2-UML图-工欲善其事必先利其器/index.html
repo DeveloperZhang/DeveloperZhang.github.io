@@ -102,25 +102,33 @@
 
 
 
-  <meta name="description" content="算法1.定义是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。 2.特性 有穷性 确定性 可行性 输入 输出  3.设计要求 正确性 可读性 健壮性 高效率 低存储  4.度量方法 事后统计方法 事前统计方法  函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &amp;gt; N，f(n)总是比g(n)大，那么，我们就说f(n)">
-<meta name="keywords" content="内功修炼">
+  <meta name="description" content="1.前言上篇文章已经说明了咱们要开始学习设计模式，我参考的书籍是《大话设计模式》，这本书以故事线为主线，带领读者层层深入，很适合自学的读者（凭心论，非广告/(ㄒoㄒ)/~~）。但是学习之前，我们要能简单的识别常见的UML图，对面向对象有个大概的了解，这篇文章主要就是介绍这个的。 2.正文废话不多说，我们直入主题：我相信大家大部分人都用的是面向对象语言吧，所以对于这个面向对象应该都很了解了（封装，继">
+<meta name="keywords" content="UML,面向对象">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2-算法">
-<meta property="og:url" content="http://vicentz.cn/2018/04/27/DataStruts/2-算法/index.html">
+<meta property="og:title" content="B2-UML图-工欲善其事必先利其器">
+<meta property="og:url" content="http://vicentz.cn/2018/04/27/DesignPatterns/B2-UML图-工欲善其事必先利其器/index.html">
 <meta property="og:site_name" content="VicentZ&#39;s zone">
-<meta property="og:description" content="算法1.定义是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。 2.特性 有穷性 确定性 可行性 输入 输出  3.设计要求 正确性 可读性 健壮性 高效率 低存储  4.度量方法 事后统计方法 事前统计方法  函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &amp;gt; N，f(n)总是比g(n)大，那么，我们就说f(n)">
+<meta property="og:description" content="1.前言上篇文章已经说明了咱们要开始学习设计模式，我参考的书籍是《大话设计模式》，这本书以故事线为主线，带领读者层层深入，很适合自学的读者（凭心论，非广告/(ㄒoㄒ)/~~）。但是学习之前，我们要能简单的识别常见的UML图，对面向对象有个大概的了解，这篇文章主要就是介绍这个的。 2.正文废话不多说，我们直入主题：我相信大家大部分人都用的是面向对象语言吧，所以对于这个面向对象应该都很了解了（封装，继">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-27T09:24:48.000Z">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20180427-B2-%E7%B1%BB%E5%9B%BE.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E6%8E%A5%E5%8F%A3.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E7%BB%A7%E6%89%BF.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E4%BE%9D%E8%B5%96.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E5%85%B3%E8%81%94.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E8%81%9A%E5%90%88.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E5%90%88%E6%88%90.png">
+<meta property="og:updated_time" content="2018-04-27T13:10:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2-算法">
-<meta name="twitter:description" content="算法1.定义是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。 2.特性 有穷性 确定性 可行性 输入 输出  3.设计要求 正确性 可读性 健壮性 高效率 低存储  4.度量方法 事后统计方法 事前统计方法  函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &amp;gt; N，f(n)总是比g(n)大，那么，我们就说f(n)">
+<meta name="twitter:title" content="B2-UML图-工欲善其事必先利其器">
+<meta name="twitter:description" content="1.前言上篇文章已经说明了咱们要开始学习设计模式，我参考的书籍是《大话设计模式》，这本书以故事线为主线，带领读者层层深入，很适合自学的读者（凭心论，非广告/(ㄒoㄒ)/~~）。但是学习之前，我们要能简单的识别常见的UML图，对面向对象有个大概的了解，这篇文章主要就是介绍这个的。 2.正文废话不多说，我们直入主题：我相信大家大部分人都用的是面向对象语言吧，所以对于这个面向对象应该都很了解了（封装，继">
+<meta name="twitter:image" content="http://oc8ql3urp.bkt.clouddn.com/20180427-B2-%E7%B1%BB%E5%9B%BE.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://vicentz.cn/2018/04/27/DataStruts/2-算法/"/>
+  <link rel="canonical" href="http://vicentz.cn/2018/04/27/DesignPatterns/B2-UML图-工欲善其事必先利其器/"/>
 
 
 
@@ -130,7 +138,7 @@
   };
 </script>
 
-  <title>2-算法 | VicentZ's zone</title>
+  <title>B2-UML图-工欲善其事必先利其器 | VicentZ's zone</title>
   
 
 
@@ -304,7 +312,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://vicentz.cn/2018/04/27/DataStruts/2-算法/">
+    <link itemprop="mainEntityOfPage" href="http://vicentz.cn/2018/04/27/DesignPatterns/B2-UML图-工欲善其事必先利其器/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DeveloperZhang">
@@ -321,7 +329,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2-算法
+          <h1 class="post-title" itemprop="name headline">B2-UML图-工欲善其事必先利其器
               
             
           </h1>
@@ -346,7 +354,7 @@
                 
               
 
-              <time title="创建时间：2018-04-27 17:15:00 / 修改时间：17:24:48" itemprop="dateCreated datePublished" datetime="2018-04-27T17:15:00+08:00">2018-04-27</time>
+              <time title="创建时间：2018-04-27 21:01:00 / 修改时间：21:10:51" itemprop="dateCreated datePublished" datetime="2018-04-27T21:01:00+08:00">2018-04-27</time>
             
 
             
@@ -368,7 +376,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/设计模式/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a></span>
 
                 
                 
@@ -402,43 +410,18 @@
       
 
       
-        <h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><h2 id="1-定义"><a href="#1-定义" class="headerlink" title="1.定义"></a>1.定义</h2><p>是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。</p>
-<h2 id="2-特性"><a href="#2-特性" class="headerlink" title="2.特性"></a>2.特性</h2><ul>
-<li>有穷性</li>
-<li>确定性</li>
-<li>可行性</li>
-<li>输入</li>
-<li>输出</li>
-</ul>
-<h2 id="3-设计要求"><a href="#3-设计要求" class="headerlink" title="3.设计要求"></a>3.设计要求</h2><ul>
-<li>正确性</li>
-<li>可读性</li>
-<li>健壮性</li>
-<li>高效率</li>
-<li>低存储</li>
-</ul>
-<h2 id="4-度量方法"><a href="#4-度量方法" class="headerlink" title="4.度量方法"></a>4.度量方法</h2><ul>
-<li>事后统计方法</li>
-<li>事前统计方法</li>
-</ul>
-<p>函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &gt; N，f(n)总是比g(n)大，那么，我们就说f(n)的增长渐进快于g(n)。</p>
-<h2 id="5-时间复杂度"><a href="#5-时间复杂度" class="headerlink" title="5.时间复杂度"></a>5.时间复杂度</h2><ul>
-<li><p>衡量标准：大O阶</p>
-</li>
-<li><p>推导步骤：</p>
-<ul>
-<li>用常数1取代运行时间中的素有加法常数。</li>
-<li>在修改后的运行次数函数中，只保留最高阶。</li>
-<li>如果最高阶存在且不是1，则去除这个项相乘的常数。</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-1-时间复杂度消耗时间的大小排列"><a href="#5-1-时间复杂度消耗时间的大小排列" class="headerlink" title="5.1.时间复杂度消耗时间的大小排列"></a>5.1.时间复杂度消耗时间的大小排列</h3><pre><code>O(1) &lt; O(logN) &lt; O(n) &lt; O(nlogN) &lt; O(n^2) &lt; O(n^3) &lt; O(2^n) &lt; O(n!) &lt; O(n^n)
-</code></pre><h2 id="6-空间复杂度"><a href="#6-空间复杂度" class="headerlink" title="6.空间复杂度"></a>6.空间复杂度</h2><p>算法所占空间的一个衡量标准。</p>
-<p>由于硬件性能越来越好，通常算法都是用空间换时间的方式。</p>
-<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><strong><a href="http://vicentz.cn">博客地址</a></strong></p>
-<p><strong><a href="https://www.jianshu.com/u/30b99e28774c" target="_blank" rel="noopener">简书地址</a></strong></p>
-<p><strong><a href="https://github.com/DeveloperZhang" target="_blank" rel="noopener">GitHub</a></strong></p>
+        <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><p>上篇文章已经说明了咱们要开始学习设计模式，我参考的书籍是《大话设计模式》，这本书以故事线为主线，带领读者层层深入，很适合自学的读者（凭心论，非广告/(ㄒoㄒ)/~~）。但是学习之前，我们要能简单的识别常见的UML图，对面向对象有个大概的了解，这篇文章主要就是介绍这个的。</p>
+<h1 id="2-正文"><a href="#2-正文" class="headerlink" title="2.正文"></a>2.正文</h1><p>废话不多说，我们直入主题：<br>我相信大家大部分人都用的是面向对象语言吧，所以对于这个面向对象应该都很了解了（封装，继承，多态），我们这里不讲面向对象，只讲基于面向对象解决办法的辅助工具UML图，一个良好结构的UML图不仅能帮助我们快速分析问题，还能在于后期维护时候提供有效的帮助，所以本人也十分建议在日常工作前，能草拟一个UML图来帮助我们分析对象之间的关系。</p>
+<h2 id="2-1-类图"><a href="#2-1-类图" class="headerlink" title="2.1.类图"></a>2.1.类图</h2><p>首先，最先介绍的就是类图了，它包包含了类的名字，属性和方法。<br><img src="http://oc8ql3urp.bkt.clouddn.com/20180427-B2-%E7%B1%BB%E5%9B%BE.png" alt="类图"></p>
+<h2 id="2-2-接口"><a href="#2-2-接口" class="headerlink" title="2.2.接口"></a>2.2.接口</h2><p>接口就是预定义了一个实现该接口的类需要满足的条件，一般只是指方法。<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E6%8E%A5%E5%8F%A3.png" alt="接口"></p>
+<h2 id="2-3-继承"><a href="#2-3-继承" class="headerlink" title="2.3.继承"></a>2.3.继承</h2><p>继承就是子类继承了父类的所有属性和方法，方便扩展。<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E7%BB%A7%E6%89%BF.png" alt="继承"></p>
+<h2 id="2-4-依赖"><a href="#2-4-依赖" class="headerlink" title="2.4.依赖"></a>2.4.依赖</h2><p>依赖关系最弱，对象A作为对象B的某一个行为的参数传入，可有可无，没有的话顶多就不产生这个行为，或者对行为产生不同的结果而已。<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E4%BE%9D%E8%B5%96.png" alt="依赖"></p>
+<h2 id="2-5-关联"><a href="#2-5-关联" class="headerlink" title="2.5.关联"></a>2.5.关联</h2><p>关联就是一个类要知道另一个类这种情况，可以是私有的属性，耦合关系弱。<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E5%85%B3%E8%81%94.png" alt="关联"></p>
+<h2 id="2-6-聚合"><a href="#2-6-聚合" class="headerlink" title="2.6.聚合"></a>2.6.聚合</h2><p>是一种弱拥有关系，A对象包含B对象，但是B对象可以不是A的一部分。<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E8%81%9A%E5%90%88.png" alt="聚合"></p>
+<h2 id="2-7-合成"><a href="#2-7-合成" class="headerlink" title="2.7.合成"></a>2.7.合成</h2><p>是一种强拥有关系，严格的整体与部分关系，部分和整体的生命周期一致。<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161127Blog_%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1_%E5%90%88%E6%88%90.png" alt="合成"></p>
+<p>好了，到这里我们已经把所有的对象间的关系和UML图展示给大家了，大家有没有觉得爽爆了的感觉，又没有觉得其实面向对象并没有那么难，所有的大问题都能拆分成小问题，小问题再拆分更小的问题，至于如何拆分与结合才是我们真正要探索的，慢慢来，量变终究会质变的。<br>对于对象间关系我也用OC写了一个Demo,</p>
+<p><a href="https://github.com/DeveloperZhang/Blog_Demo" target="_blank" rel="noopener">20161127_Demo_Object Oriented</a><br>供大家参考。</p>
+<p>转载请注明出处:<a href="www.vicentz.cn">vicentz</a></p>
 
       
     </div>
@@ -459,7 +442,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/内功修炼/" rel="tag"># 内功修炼</a>
+            <a href="/tags/UML/" rel="tag"># UML</a>
+          
+            <a href="/tags/面向对象/" rel="tag"># 面向对象</a>
           
         </div>
       
@@ -472,8 +457,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/19/Others/关于旅行/" rel="next" title="关于旅行">
-                <i class="fa fa-chevron-left"></i> 关于旅行
+              <a href="/2018/04/27/DesignPatterns/B3-设计模式6原则大原则之单一原则/" rel="next" title="B3-设计模式6原则大原则之单一原则">
+                <i class="fa fa-chevron-left"></i> B3-设计模式6原则大原则之单一原则
               </a>
             
           </div>
@@ -482,8 +467,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/27/DataStruts/1-数据结构/" rel="prev" title="1-数据结构基本概念">
-                1-数据结构基本概念 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/27/DesignPatterns/B1-设计模式初始化/" rel="prev" title="B1-设计模式初始化">
+                B1-设计模式初始化 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -699,7 +684,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#算法"><span class="nav-number">1.</span> <span class="nav-text">算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-定义"><span class="nav-number">1.1.</span> <span class="nav-text">1.定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-特性"><span class="nav-number">1.2.</span> <span class="nav-text">2.特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-设计要求"><span class="nav-number">1.3.</span> <span class="nav-text">3.设计要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-度量方法"><span class="nav-number">1.4.</span> <span class="nav-text">4.度量方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-时间复杂度"><span class="nav-number">1.5.</span> <span class="nav-text">5.时间复杂度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-时间复杂度消耗时间的大小排列"><span class="nav-number">1.5.1.</span> <span class="nav-text">5.1.时间复杂度消耗时间的大小排列</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-空间复杂度"><span class="nav-number">1.6.</span> <span class="nav-text">6.空间复杂度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-number">1.7.</span> <span class="nav-text">友情链接</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-前言"><span class="nav-number">1.</span> <span class="nav-text">1.前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-正文"><span class="nav-number">2.</span> <span class="nav-text">2.正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-类图"><span class="nav-number">2.1.</span> <span class="nav-text">2.1.类图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-接口"><span class="nav-number">2.2.</span> <span class="nav-text">2.2.接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-继承"><span class="nav-number">2.3.</span> <span class="nav-text">2.3.继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-依赖"><span class="nav-number">2.4.</span> <span class="nav-text">2.4.依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-关联"><span class="nav-number">2.5.</span> <span class="nav-text">2.5.关联</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-聚合"><span class="nav-number">2.6.</span> <span class="nav-text">2.6.聚合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-7-合成"><span class="nav-number">2.7.</span> <span class="nav-text">2.7.合成</span></a></li></ol></li></ol></div>
             
 
           </div>

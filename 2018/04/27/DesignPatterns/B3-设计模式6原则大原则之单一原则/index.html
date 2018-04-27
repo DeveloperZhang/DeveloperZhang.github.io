@@ -102,25 +102,35 @@
 
 
 
-  <meta name="description" content="算法1.定义是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。 2.特性 有穷性 确定性 可行性 输入 输出  3.设计要求 正确性 可读性 健壮性 高效率 低存储  4.度量方法 事后统计方法 事前统计方法  函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &amp;gt; N，f(n)总是比g(n)大，那么，我们就说f(n)">
-<meta name="keywords" content="内功修炼">
+  <meta name="description" content="1.前言设计模式的原则是所有设计模式的基础。所以，在学习设计模式之前，我们还是要掌握这6大原则的。今天我们来介绍一下审计模式种的6大原则中的单一原则。 2.正文2.1.单一职责定义：单一职责原则（SRP），就一个类而言，应该仅有一个引起它变化的原因。 遵循单一职责原的优点有：  可以降低类的复杂度，一个类只负责一项职责，其逻辑肯定要比负责多项职责简单的多； 提高类的可读性，提高系统的可维护性； 变">
+<meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2-算法">
-<meta property="og:url" content="http://vicentz.cn/2018/04/27/DataStruts/2-算法/index.html">
+<meta property="og:title" content="B3-设计模式6原则大原则之单一原则">
+<meta property="og:url" content="http://vicentz.cn/2018/04/27/DesignPatterns/B3-设计模式6原则大原则之单一原则/index.html">
 <meta property="og:site_name" content="VicentZ&#39;s zone">
-<meta property="og:description" content="算法1.定义是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。 2.特性 有穷性 确定性 可行性 输入 输出  3.设计要求 正确性 可读性 健壮性 高效率 低存储  4.度量方法 事后统计方法 事前统计方法  函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &amp;gt; N，f(n)总是比g(n)大，那么，我们就说f(n)">
+<meta property="og:description" content="1.前言设计模式的原则是所有设计模式的基础。所以，在学习设计模式之前，我们还是要掌握这6大原则的。今天我们来介绍一下审计模式种的6大原则中的单一原则。 2.正文2.1.单一职责定义：单一职责原则（SRP），就一个类而言，应该仅有一个引起它变化的原因。 遵循单一职责原的优点有：  可以降低类的复杂度，一个类只负责一项职责，其逻辑肯定要比负责多项职责简单的多； 提高类的可读性，提高系统的可维护性； 变">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-27T09:24:48.000Z">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_1.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_2.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_3.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_4.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_5.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_6.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_7.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_8.png">
+<meta property="og:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_9.png">
+<meta property="og:updated_time" content="2018-04-27T13:07:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2-算法">
-<meta name="twitter:description" content="算法1.定义是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。 2.特性 有穷性 确定性 可行性 输入 输出  3.设计要求 正确性 可读性 健壮性 高效率 低存储  4.度量方法 事后统计方法 事前统计方法  函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &amp;gt; N，f(n)总是比g(n)大，那么，我们就说f(n)">
+<meta name="twitter:title" content="B3-设计模式6原则大原则之单一原则">
+<meta name="twitter:description" content="1.前言设计模式的原则是所有设计模式的基础。所以，在学习设计模式之前，我们还是要掌握这6大原则的。今天我们来介绍一下审计模式种的6大原则中的单一原则。 2.正文2.1.单一职责定义：单一职责原则（SRP），就一个类而言，应该仅有一个引起它变化的原因。 遵循单一职责原的优点有：  可以降低类的复杂度，一个类只负责一项职责，其逻辑肯定要比负责多项职责简单的多； 提高类的可读性，提高系统的可维护性； 变">
+<meta name="twitter:image" content="http://oc8ql3urp.bkt.clouddn.com/20161201blog_1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://vicentz.cn/2018/04/27/DataStruts/2-算法/"/>
+  <link rel="canonical" href="http://vicentz.cn/2018/04/27/DesignPatterns/B3-设计模式6原则大原则之单一原则/"/>
 
 
 
@@ -130,7 +140,7 @@
   };
 </script>
 
-  <title>2-算法 | VicentZ's zone</title>
+  <title>B3-设计模式6原则大原则之单一原则 | VicentZ's zone</title>
   
 
 
@@ -304,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://vicentz.cn/2018/04/27/DataStruts/2-算法/">
+    <link itemprop="mainEntityOfPage" href="http://vicentz.cn/2018/04/27/DesignPatterns/B3-设计模式6原则大原则之单一原则/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DeveloperZhang">
@@ -321,7 +331,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2-算法
+          <h1 class="post-title" itemprop="name headline">B3-设计模式6原则大原则之单一原则
               
             
           </h1>
@@ -346,7 +356,7 @@
                 
               
 
-              <time title="创建时间：2018-04-27 17:15:00 / 修改时间：17:24:48" itemprop="dateCreated datePublished" datetime="2018-04-27T17:15:00+08:00">2018-04-27</time>
+              <time title="创建时间：2018-04-27 21:00:00 / 修改时间：21:07:09" itemprop="dateCreated datePublished" datetime="2018-04-27T21:00:00+08:00">2018-04-27</time>
             
 
             
@@ -368,7 +378,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/设计模式/" itemprop="url" rel="index"><span itemprop="name">设计模式</span></a></span>
 
                 
                 
@@ -402,40 +412,19 @@
       
 
       
-        <h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><h2 id="1-定义"><a href="#1-定义" class="headerlink" title="1.定义"></a>1.定义</h2><p>是解决特定问题求解步骤的描述，在计算机中为指令的有限序列，并且每条指令表示一个或者多个操作。</p>
-<h2 id="2-特性"><a href="#2-特性" class="headerlink" title="2.特性"></a>2.特性</h2><ul>
-<li>有穷性</li>
-<li>确定性</li>
-<li>可行性</li>
-<li>输入</li>
-<li>输出</li>
-</ul>
-<h2 id="3-设计要求"><a href="#3-设计要求" class="headerlink" title="3.设计要求"></a>3.设计要求</h2><ul>
-<li>正确性</li>
-<li>可读性</li>
-<li>健壮性</li>
-<li>高效率</li>
-<li>低存储</li>
-</ul>
-<h2 id="4-度量方法"><a href="#4-度量方法" class="headerlink" title="4.度量方法"></a>4.度量方法</h2><ul>
-<li>事后统计方法</li>
-<li>事前统计方法</li>
-</ul>
-<p>函数渐进增长：给定两个函数f(n)和g(n)，如果存在一个整数N，使得对于所有的n &gt; N，f(n)总是比g(n)大，那么，我们就说f(n)的增长渐进快于g(n)。</p>
-<h2 id="5-时间复杂度"><a href="#5-时间复杂度" class="headerlink" title="5.时间复杂度"></a>5.时间复杂度</h2><ul>
-<li><p>衡量标准：大O阶</p>
-</li>
-<li><p>推导步骤：</p>
+        <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><p>设计模式的原则是所有设计模式的基础。所以，在学习设计模式之前，我们还是要掌握这6大原则的。今天我们来介绍一下审计模式种的6大原则中的单一原则。</p>
+<h1 id="2-正文"><a href="#2-正文" class="headerlink" title="2.正文"></a>2.正文</h1><h1 id="2-1-单一职责"><a href="#2-1-单一职责" class="headerlink" title="2.1.单一职责"></a>2.1.单一职责</h1><p><strong>定义：</strong>单一职责原则（SRP），就一个类而言，应该仅有一个引起它变化的原因。</p>
+<p><strong>遵循单一职责原的优点有：</strong></p>
 <ul>
-<li>用常数1取代运行时间中的素有加法常数。</li>
-<li>在修改后的运行次数函数中，只保留最高阶。</li>
-<li>如果最高阶存在且不是1，则去除这个项相乘的常数。</li>
+<li>可以降低类的复杂度，一个类只负责一项职责，其逻辑肯定要比负责多项职责简单的多；</li>
+<li>提高类的可读性，提高系统的可维护性；</li>
+<li>变更引起的风险降低，变更是必然的，如果单一职责原则遵守的好，当修改一个功能时，可以显著降低对其他功能的影响。</li>
 </ul>
-</li>
-</ul>
-<h3 id="5-1-时间复杂度消耗时间的大小排列"><a href="#5-1-时间复杂度消耗时间的大小排列" class="headerlink" title="5.1.时间复杂度消耗时间的大小排列"></a>5.1.时间复杂度消耗时间的大小排列</h3><pre><code>O(1) &lt; O(logN) &lt; O(n) &lt; O(nlogN) &lt; O(n^2) &lt; O(n^3) &lt; O(2^n) &lt; O(n!) &lt; O(n^n)
-</code></pre><h2 id="6-空间复杂度"><a href="#6-空间复杂度" class="headerlink" title="6.空间复杂度"></a>6.空间复杂度</h2><p>算法所占空间的一个衡量标准。</p>
-<p>由于硬件性能越来越好，通常算法都是用空间换时间的方式。</p>
+<p><strong>需要说明的一点是单一职责原则不只是面向对象编程思想所特有的，只要是模块化的程序设计，都适用单一职责原则。</strong></p>
+<p><strong>问题由来：</strong>类T负责两个不同的职责：职责P1，职责P2。当由于职责P1需求发生改变而需要修改类T时，有可能会导致原本运行正常的职责P2功能发生故障。<br><strong>解决方案：</strong>遵循单一职责原则。分别建立两个类T1、T2，使T1完成职责P1功能，T2完成职责P2功能。这样，当修改类T1时，不会使职责P2发生故障风险；同理，当修改T2时，也不会使职责P1发生故障风险。</p>
+<p>虽然单一职责原则如此简单，并且被认为是常识，但是即便是经验丰富的程序员写出的程序，也会有违背这一原则的代码存在。为什么会出现这种现象呢？因为有职责扩散。<br><strong>所谓职责扩散，就是因为某种原因，职责P被分化为粒度更细的职责P1和P2。</strong><br>所以记住，在职责扩散到我们无法控制的程度之前，立刻对代码进行重构。<br>简单的看一个例子：<br><strong>动物呼吸</strong><br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_1.png" alt=""><br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_2.png" alt=""><br>程序上线后，发现问题了，并不是所有的动物都呼吸空气的，比如鱼就是呼吸水的。修改时如果遵循单一职责原则，需要将Animal类细分为陆生动物类Terrestrial，水生动物Aquatic，代码如下：<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_3.png" alt=""><br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_4.png" alt=""><br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_5.png" alt=""><br>我们会发现如果这样修改花销是很大的，除了将原来的类分解之外，还需要修改客户端。而直接修改类Animal来达成目的虽然违背了单一职责原则，但花销却小的多，代码如下：<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_6.png" alt=""><br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_7.png" alt=""><br>可以看到，这种修改方式要简单的多。但是却存在着隐患：有一天需要将鱼分为呼吸淡水的鱼和呼吸海水的鱼，则又需要修改Animal类的breathe方法，而对原有代码的修改会对调用“猪”“牛”“羊”等相关功能带来风险，也许某一天你会发现程序运行的结果变为“牛呼吸水”了。这种修改方式直接在代码级别上违背了单一职责原则，虽然修改起来最简单，但隐患却是最大的。还有一种修改方式：<br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_8.png" alt=""><br><img src="http://oc8ql3urp.bkt.clouddn.com/20161201blog_9.png" alt=""><br>可以看到，这种修改方式没有改动原来的方法，而是在类中新加了一个方法，这样虽然也违背了单一职责原则，但在方法级别上却是符合单一职责原则的，因为它并没有动原来方法的代码。这三种方式各有优缺点，那么在实际编程中，采用哪一中呢？其实这真的比较难说，需要根据实际情况来确定。我的原则是：只有逻辑足够简单，才可以在代码级别上遵守单一职责原则；只有类中方法数量足够少，才可以在方法级别上遵守单一职责原则。</p>
+<h1 id="3-结语"><a href="#3-结语" class="headerlink" title="3.结语"></a>3.结语</h1><p>当类中只有少数方法，所以，无论是在代码级别上违反单一职责原则，还是在方法级别上违反，都不会造成太大的影响。而类特别复杂的时候，一旦发生职责扩散而需要修改类时，除非这个类本身非常简单，否则还是遵循单一职责原则的好。  </p>
+<p>参考：<a href="http://blog.csdn.net/zhengzhb/article/details/7278174" target="_blank" rel="noopener">http://blog.csdn.net/zhengzhb/article/details/7278174</a></p>
 <h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><strong><a href="http://vicentz.cn">博客地址</a></strong></p>
 <p><strong><a href="https://www.jianshu.com/u/30b99e28774c" target="_blank" rel="noopener">简书地址</a></strong></p>
 <p><strong><a href="https://github.com/DeveloperZhang" target="_blank" rel="noopener">GitHub</a></strong></p>
@@ -459,7 +448,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/内功修炼/" rel="tag"># 内功修炼</a>
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
           
         </div>
       
@@ -472,8 +461,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/19/Others/关于旅行/" rel="next" title="关于旅行">
-                <i class="fa fa-chevron-left"></i> 关于旅行
+              <a href="/2018/04/27/SoftwareEngineering/A1-软件工程学概述/" rel="next" title="A1-软件工程学概述">
+                <i class="fa fa-chevron-left"></i> A1-软件工程学概述
               </a>
             
           </div>
@@ -482,8 +471,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/27/DataStruts/1-数据结构/" rel="prev" title="1-数据结构基本概念">
-                1-数据结构基本概念 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/27/DesignPatterns/B2-UML图-工欲善其事必先利其器/" rel="prev" title="B2-UML图-工欲善其事必先利其器">
+                B2-UML图-工欲善其事必先利其器 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -699,7 +688,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#算法"><span class="nav-number">1.</span> <span class="nav-text">算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-定义"><span class="nav-number">1.1.</span> <span class="nav-text">1.定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-特性"><span class="nav-number">1.2.</span> <span class="nav-text">2.特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-设计要求"><span class="nav-number">1.3.</span> <span class="nav-text">3.设计要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-度量方法"><span class="nav-number">1.4.</span> <span class="nav-text">4.度量方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-时间复杂度"><span class="nav-number">1.5.</span> <span class="nav-text">5.时间复杂度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-时间复杂度消耗时间的大小排列"><span class="nav-number">1.5.1.</span> <span class="nav-text">5.1.时间复杂度消耗时间的大小排列</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-空间复杂度"><span class="nav-number">1.6.</span> <span class="nav-text">6.空间复杂度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-number">1.7.</span> <span class="nav-text">友情链接</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-前言"><span class="nav-number">1.</span> <span class="nav-text">1.前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-正文"><span class="nav-number">2.</span> <span class="nav-text">2.正文</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-1-单一职责"><span class="nav-number">3.</span> <span class="nav-text">2.1.单一职责</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-结语"><span class="nav-number">4.</span> <span class="nav-text">3.结语</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-number">4.1.</span> <span class="nav-text">友情链接</span></a></li></ol></li></ol></div>
             
 
           </div>
